@@ -14,28 +14,27 @@
          	<a id="eventos" class="fontMenu" href="#">Eventos</a>
            	<a id="contato" class="fontMenu" href="#">Contato</a>
          </div>
+         <div id="user">
+         	<div id="name" class="fontUser">Olá, Viviane</div> 
+         	<div id="conta" class="fontUser">Conta</div>
+         	<div id="sair" class="fontUser">Sair</div>
+         </div>
          <div id="corpo">
          	<div id="loginUser">
          		
-         		<div id="acessar" align="center" class="fontTitulo">EVENTOS</div>
-         		<div id="erro">*Email já cadastrado</div>
+         		<div id="acessar" align="center" class="fontTitulo">LISTA DE EVENTOS</div>
          		
-         		<div class="fontTitulo">Nome:</div>
-	         	<input id="caixaEmail" type="text" name="nome"/>
+         		<div id="tabelaProgramacao">
+	         		<table>
+	         			<tr><td class="col1"><div class="fontTituloTabela">Nome</div></td><td class="col2"><div class="fontTituloTabela">Local</div></td><td class="col3"><div class="fontTituloTabela">Data Início</div></td><td class="col4"><div class="fontTituloTabela">Opções</div></td></tr>
+	         			<tr><td class="col1">a</td> <td class="col2">b</td> <td class="col3">c</td> <td class="col4"><a href="#">Gerênciar</a></td></tr>
+	         			<tr><td class="col1">a</td> <td class="col2">b</td> <td class="col3" >c</td> <td class="col4"><a href="#">Gerênciar</a></td></tr>
+	         			
+	         			
+	         		</table>
+	         	</div> 
 	         	
-	         	<div class="fontTitulo">CPF:</div>
-	         	<input id="caixaEmail" type="text" name="cpf"/>
-         	
-	         	<div class="fontTitulo">E-mail:</div>
-	         	<input id="caixaEmail" type="text" name="e-mail"/>
-	         	
-	         	<div class="fontTitulo">Senha:</div>
-	         	<input id="caixaSenha" type="text" name="senha"/>
-	         	
-	         	<div class="fontTitulo">Repita a senha:</div>
-	         	<input id="caixaSenha" type="text" name="senha2"/>
-	         	
-	         	<div id="login" align="center"><input type="button" value="Cancelar"/><input type="button" value="Fazer login"/></div>
+	         	<div id="login" align="center"><input type="button" value="Criar novo evento"/></div>
 	         </div>
          </div>
 	</div>
