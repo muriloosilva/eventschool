@@ -27,6 +27,8 @@
          	</div>
          	<div id="loginUser">
          		
+         		<div id="acessar" align="center" class="fontTitulo">SECITEC 2014</div> 
+         		
          		<div id="acessar" align="center" class="fontTitulo">ATIVIDADES</div>
          		
          		<div class="fontTitulo">Palestras:</div> 
