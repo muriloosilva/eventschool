@@ -17,8 +17,8 @@
          <div id="corpo">
          	<div id="loginUser">
          		
-         		<div id="acessar" align="center" class="fontTitulo">EVENTOS</div>
-         		<div id="erro">*Email já cadastrado</div>
+         		<div id="acessar" align="center" class="fontTitulo">CADASTRAR EVENTO</div>
+         		<div id="erro">*Evento já cadastrado</div>
          		
          		<div class="fontTitulo">Nome:</div>
 	         	<input id="caixaEmail" type="text" name="nome"/>
@@ -35,7 +35,19 @@
 	         	<div class="fontTitulo">Data Fim:</div>
 	         	<input id="caixaSenha" type="text" name="fim"/>
 	         	
-	         	<div id="login" align="center"><input type="button" value="Cancelar"/><input type="button" value="Fazer login"/></div>
+	         	<div class="fontTitulo">Data inicio inscrições:</div>
+	         	<input id="caixaSenha" type="text" name="inicioInscricoes"/>
+	         	
+	         	<div class="fontTitulo">Data fim inscrições:</div>
+	         	<input id="caixaSenha" type="text" name="fimInscricoes"/>
+	         	
+	         	<div class="fontTitulo">Telefone:</div>
+	         	<input id="caixaSenha" type="text" name="telefone"/>
+	         	
+	         	<div class="fontTitulo">E-mail:</div>
+	         	<input id="caixaSenha" type="text" name="email"/>
+	         	
+	         	<div id="login" align="center"><input type="button" value="Cancelar"/><input type="button" value="Cadastrar"/></div>
 	         </div>
          </div>
 	</div>
