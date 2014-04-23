@@ -248,6 +248,11 @@ body {
 	
 }
 
+.textArea{
+	width:400px; 
+	height: 100px;
+}
+
 #erro{
 	font-family:Arial, Helvetica, sans-serif;
 	font-size:14px;

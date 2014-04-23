@@ -17,7 +17,7 @@
          <div id="corpo">
          	<div id="loginUser">
          		
-         		<div id="acessar" align="center" class="fontTitulo">Acessar o EventSchool</div>
+         		<div id="acessar" align="center" class="fontTitulo">Acessar o EventSchool - Administrador</div>
          		<div id="erro">*Usuário ou senha incorreto</div>
          	
 	         	<div class="fontTitulo">E-mail:</div>
