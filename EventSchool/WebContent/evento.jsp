@@ -14,6 +14,11 @@
          	<a id="eventos" class="fontMenu" href="#">Eventos</a>
            	<a id="contato" class="fontMenu" href="#">Contato</a>
          </div>
+         <div id="user">
+         	<div id="name" class="fontUser">Olá, Viviane</div> 
+         	<div id="conta" class="fontUser">Conta</div>
+         	<div id="sair" class="fontUser">Sair</div>
+         </div>
          <div id="corpo">
          	<div id="dadosEvento">
 	         	<div class="fontTitulo">Nome do Evento:</div>

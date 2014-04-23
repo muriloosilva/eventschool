@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>EventoSchool</title>
-<link href="css/index.css" rel="stylesheet" type="text/css" />
+<link href="css/homeLogado.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
 	<div id="principal">
@@ -13,6 +13,11 @@
 		 <div id="menuHeader">
          	<a id="eventos" class="fontMenu" href="#">Eventos</a>
            	<a id="contato" class="fontMenu" href="#">Contato</a>
+         </div>
+         <div id="user">
+         	<div id="name" class="fontUser">Olá, Viviane</div> 
+         	<div id="conta" class="fontUser">Conta</div>
+         	<div id="sair" class="fontUser">Sair</div>
          </div>
          <div id="corpo">
          	<div align="center" id="lista">
