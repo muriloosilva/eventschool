@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>EventoSchool</title>
-<link href="css/configurarEvento.css" rel="stylesheet" type="text/css" />
+<link href="css/cadastrarAtividade.css" rel="stylesheet" type="text/css" />
 </head>
 <body> 
 	<div id="principal">
@@ -29,39 +29,37 @@
          		
          		<div id="acessar" align="center" class="fontTitulo">SECITEC 2014</div> 
          		
-         		<div id="acessar" align="center" class="fontTitulo">Configurar Evento</div>
+         		<div id="acessar" align="center" class="fontTitulo">Cadastrar Atividade</div>
          		
          		
          		<div class="center">
-         			<div id="erro">*Evento já cadastrado</div>
+         			<div id="erro">*Atividade já cadastrada</div>
 	         		<div class="fontTitulo">Nome:</div>
 		         	<input class="caixa" type="text" name="nome"/>
 		         	
 		         	<div class="fontTitulo">Descrição:</div>
 		         	<input class="caixa" type="text" name="descricao"/>
 	         	
-		         	<div class="fontTitulo">Local:</div>
-		         	<input class="caixa" type="text" name="local"/>
+		         	<div class="fontTitulo">Tipo:</div>
+		         	<select class="caixa" name="tipo">
+		         		<option value="Palestra">Palestra</option>
+		         		<option value="Oficina">Oficina</option>
+		         		<option value="Minicurso">Minicurso</option>
+		         	</select>
 		         	
-		         	<div class="fontTitulo">Data Inicio:</div>
-		         	<input class="caixa" type="text" name="inicio"/>
+		         	<div class="fontTitulo">Data:</div>
+		         	<input class="caixa" type="text" name="data"/>
 		         	
-		         	<div class="fontTitulo">Data Fim:</div>
-		         	<input class="caixa" type="text" name="fim"/>
+		         	<div class="fontTitulo">Hora inicio:</div>
+		         	<input class="caixa" type="text" name="horaInicio"/>
 		         	
-		         	<div class="fontTitulo">Data inicio inscrições:</div>
-		         	<input class="caixa" type="text" name="inicioInscricoes"/>
+		         	<div class="fontTitulo">Hora fim:</div>
+		         	<input class="caixa" type="text" name="horaFim"/>
 		         	
-		         	<div class="fontTitulo">Data fim inscrições:</div>
-		         	<input class="caixa" type="text" name="fimInscricoes"/>
-		         	
-		         	<div class="fontTitulo">Telefone:</div>
-		         	<input class="caixa" type="text" name="telefone"/>
-		         	
-		         	<div class="fontTitulo">E-mail:</div>
-		         	<input class="caixa" type="text" name="email"/>
+		         	<div class="fontTitulo">Vagas:</div>
+		         	<input class="caixa" type="text" name="vagas"/>
 	         	</div>
-	         	<div id="login" align="center"><input type="button" value="Cancelar"/><input type="button" value="Alterar"/></div>
+	         	<div id="login" align="center"><input type="button" value="Cancelar"/><input type="button" value="Cadastrar"/></div>
 	         </div>
          </div>
 	</div>

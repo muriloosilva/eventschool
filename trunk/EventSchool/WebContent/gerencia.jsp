@@ -15,7 +15,7 @@
            	<a id="contato" class="fontMenu" href="#">Contato</a>
          </div>
          <div id="user">
-         	<div id="name" class="fontUser">Olá, Viviane</div> 
+         	<div id="name" class="fontUser">Olá, Admin</div> 
          	<div id="conta" class="fontUser">Conta</div>
          	<div id="sair" class="fontUser">Sair</div>
          </div>
