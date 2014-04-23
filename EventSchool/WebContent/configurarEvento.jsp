@@ -38,7 +38,7 @@
 		         	<input class="caixa" type="text" name="nome"/>
 		         	
 		         	<div class="fontTitulo">Descrição:</div>
-		         	<input class="caixa" type="text" name="descricao"/>
+		         	<input class="textArea" type="text" name="descricao"/>
 	         	
 		         	<div class="fontTitulo">Local:</div>
 		         	<input class="caixa" type="text" name="local"/>

@@ -64,6 +64,22 @@ body {
 	text-decoration:underline;
 }
 
+.fontMenuLateral{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:18px;
+	font-weight:bold;
+	color:#BDFCFC;
+	text-decoration:none;
+	cursor:pointer;	
+	padding-bottom: 10px;
+	padding-top: 10px; 
+}
+
+.fontMenuLateral:hover{
+	color:#BDFCFC;
+	text-decoration:underline;
+}
+
 #corpo{
 	position:absolute;
 	width:1000px;     
@@ -85,18 +101,18 @@ body {
 	text-decoration:none;
 	width: 100%;
 	padding-top: 20px; 
-	padding-bottom: 5px;
+	padding-bottom: 20px;
 }
 
 #loginUser{
-	width:410px; 
-	left:100px;
-	top:71px;	
+	width: 755px;
+	left: 200px;
+	top: 71px;
 	height: 100%;
-	margin-right: 400px; 
-	margin-left: 305px; 
-	margin-bottom:50px;
-	margin-top: 50px;  
+	margin-right: 20px;
+	margin-left: 222px;
+	margin-bottom: 50px;
+	margin-top: 20px;
 	
 }
 
@@ -111,37 +127,20 @@ body {
 	padding-top: 20px; 
 }
 
-
-#caixaEmail{
-	width:400px;
-	
-}
-
-.caixa{ 
-	width:400px;
-}
-
-.textArea{
-	width:400px; 
-	height: 100px;
-}
-
-#erro{
-	font-family:Arial, Helvetica, sans-serif;
-	font-size:14px;
-	font-weight:bold;
-	color:red;
-	text-decoration:none;
-	padding-top: 10px; 
-	padding-bottom: 5px;
-}
-
 #user{
 	width: 100%;
 	height: 30px; 
 	top:205px; 
 	position: absolute; 
 	background: rgba(0, 177, 184, 0.54);
+}
+
+#menuLateral{
+	width: 200px;
+	height: 100%;  
+	position: absolute; 
+	background: rgba(0, 0, 0, 0.54);
+	
 }
 
 #name{
@@ -164,7 +163,7 @@ body {
 
 #sair{
 	position: absolute;
-	width:80px;  
+	width:80px; 
 	left:951px;
 	top:5px;	
 	padding-left:5px; 
@@ -179,3 +178,68 @@ body {
 	text-decoration:none;
 	cursor:pointer;	
 }
+
+.fontUser:hover{
+	color:#ECF1CE;
+	text-decoration:underline;
+}
+
+.col1{
+	text-align: left;
+	padding-left: 7px;
+	width: 280px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.col2{
+	text-align: left;
+	padding-left: 7px;
+	width: 220px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.col3{
+	text-align: left;
+	padding-left: 7px;
+	width: 165px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.col4{
+	text-align: left;
+	padding-left: 7px;
+	width: 105px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+#tabelaAtividade{
+	width:755PX;
+	background: rgba(211, 211, 211, 0.61); 
+
+}
+
+.fontTituloTabela{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-weight:bold;
+	color:#111;
+	text-decoration:none;
+}
+
+#atividade{
+	padding-top: 50px; 
+	
+}
+
+#configuracaoEvento{
+	
+}
+
+#inscritos{
+	
+}
+

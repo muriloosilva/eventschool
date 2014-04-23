@@ -26,31 +26,31 @@
          		<div id="erro">*Evento já cadastrado</div>
          		
          		<div class="fontTitulo">Nome:</div>
-	         	<input id="caixaEmail" type="text" name="nome"/>
+	         	<input class="caixa" type="text" name="nome"/>
 	         	
 	         	<div class="fontTitulo">Descrição:</div>
-	         	<input id="caixaEmail" type="text" name="descricao"/>
+	         	<input class="textArea" type="text" name="descricao"/>
          	
 	         	<div class="fontTitulo">Local:</div>
-	         	<input id="caixaEmail" type="text" name="local"/>
+	         	<input class="caixa" type="text" name="local"/>
 	         	
 	         	<div class="fontTitulo">Data Inicio:</div>
-	         	<input id="caixaSenha" type="text" name="inicio"/>
+	         	<input class="caixa" type="text" name="inicio"/>
 	         	
 	         	<div class="fontTitulo">Data Fim:</div>
-	         	<input id="caixaSenha" type="text" name="fim"/>
+	         	<input class="caixa" type="text" name="fim"/>
 	         	
 	         	<div class="fontTitulo">Data inicio inscrições:</div>
-	         	<input id="caixaSenha" type="text" name="inicioInscricoes"/>
+	         	<input class="caixa" type="text" name="inicioInscricoes"/>
 	         	
 	         	<div class="fontTitulo">Data fim inscrições:</div>
-	         	<input id="caixaSenha" type="text" name="fimInscricoes"/>
+	         	<input class="caixa" type="text" name="fimInscricoes"/>
 	         	
 	         	<div class="fontTitulo">Telefone:</div>
-	         	<input id="caixaSenha" type="text" name="telefone"/>
+	         	<input class="caixa" type="text" name="telefone"/>
 	         	
 	         	<div class="fontTitulo">E-mail:</div>
-	         	<input id="caixaSenha" type="text" name="email"/>
+	         	<input class="caixa" type="text" name="email"/>
 	         	
 	         	<div id="login" align="center"><input type="button" value="Cancelar"/><input type="button" value="Cadastrar"/></div>
 	         </div>
