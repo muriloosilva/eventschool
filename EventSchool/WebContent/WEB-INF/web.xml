@@ -1,26 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:javaee="http://xmlns.jcp.org/xml/ns/javaee" xmlns:web="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID">
-  <javaee:filter>
-    <javaee:filter-name>Filtro Seguranca Admin</javaee:filter-name>
-    <javaee:filter-class>control.SecureFilterAdmin</javaee:filter-class>
-  </javaee:filter>
-  <javaee:filter-mapping>
-    <javaee:filter-name>Filtro Seguranca Admin</javaee:filter-name>
-    <javaee:url-pattern>/admin/*</javaee:url-pattern>
-  </javaee:filter-mapping>
-  <javaee:filter>
-    <javaee:filter-name>Filtro Seguranca User</javaee:filter-name>
-    <javaee:filter-class>control.SecureFilterUser</javaee:filter-class>
-  </javaee:filter>
-  <javaee:filter-mapping>
-    <javaee:filter-name>Filtro Seguranca User</javaee:filter-name>
-    <javaee:url-pattern>/user/*</javaee:url-pattern>
-  </javaee:filter-mapping>
-  <javaee:welcome-file-list>
-    <javaee:welcome-file>index.jsp</javaee:welcome-file>
-  </javaee:welcome-file-list>
-  <javaee:error-page>
-    <javaee:error-code>404</javaee:error-code>
-    <javaee:location>/404.html</javaee:location>
-  </javaee:error-page>
+  <filter>
+    <filter-name>Filtro Seguranca Admin</filter-name>
+    <filter-class>control.SecureFilterAdmin</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filtro Seguranca Admin</filter-name>
+    <url-pattern>/admin/*</url-pattern>
+  </filter-mapping>
+  <filter>
+    <filter-name>Filtro Seguranca Participante</filter-name>
+    <filter-class>control.FiltroSegurancaParticipante</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>Filtro Seguranca Participante</filter-name>
+    <url-pattern>/participante/*</url-pattern>
+  </filter-mapping>
+  <welcome-file-list>
+    <welcome-file>acessoParticipante</welcome-file>
+  </welcome-file-list>
+  <error-page>
+    <error-code>404</error-code>
+    <location>/404.html</location>
+  </error-page>
 </web-app>
