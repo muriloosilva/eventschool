@@ -116,31 +116,47 @@ body {
 .col1{
 	text-align: left;
 	padding-left: 7px;
-	width: 280px;
+	width: 380px;
 	padding-bottom: 5px;
 	padding-top: 5px;
 }
 
 .col2{
-	text-align: left;
+	text-align: center;
 	padding-left: 7px;
-	width: 220px;
+	width: 100px;
 	padding-bottom: 5px;
 	padding-top: 5px;
 }
 
 .col3{
-	text-align: left;
+	text-align: center;
 	padding-left: 7px;
-	width: 165px;
+	width: 100px;
 	padding-bottom: 5px;
 	padding-top: 5px;
 }
 
 .col4{
-	text-align: left;
+	text-align: center;
 	padding-left: 7px;
-	width: 105px;
+	width: 100px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.col5{
+	text-align: center;
+	padding-left: 7px;
+	width: 100px;
+	padding-bottom: 5px;
+	padding-top: 5px;
+}
+
+.col6{
+	text-align: center;
+	padding-left: 7px;
+	width: 80px;
 	padding-bottom: 5px;
 	padding-top: 5px;
 }

@@ -26,8 +26,8 @@ public class EventoDAO {
 			stmt.setString(3,evento.getLocal());
 			stmt.setDate(4,evento.getDataInicio());
 			stmt.setDate(5,evento.getDataFim());
-			stmt.setDate(6,evento.getDataInicioInscricoes());
-			stmt.setDate(7,evento.getDataFimInscricoes());
+			stmt.setTimestamp(6,evento.getDataInicioInscricoes());
+			stmt.setTimestamp(7,evento.getDataFimInscricoes());
 			stmt.setString(8,evento.getTelefone());
 			stmt.setString(9,evento.getEmail());
 			// executa
@@ -57,8 +57,8 @@ public class EventoDAO {
 				evento.setLocal(rs.getString("local"));
 				evento.setDataInicio(rs.getDate("data_inicio"));
 				evento.setDataFim(rs.getDate("data_fim"));
-				evento.setDataInicioInscricoes(rs.getDate("data_inicio_inscricoes"));
-				evento.setDataFimInscricoes(rs.getDate("data_fim_inscricoes"));
+				evento.setDataInicioInscricoes(rs.getTimestamp("data_inicio_inscricoes"));
+				evento.setDataFimInscricoes(rs.getTimestamp("data_fim_inscricoes"));
 				evento.setTelefone(rs.getString("telefone"));
 				evento.setEmail(rs.getString("email"));
 				eventos.add(evento);
@@ -94,8 +94,8 @@ public class EventoDAO {
 				evento.setLocal(rs.getString("local"));
 				evento.setDataInicio(rs.getDate("data_inicio"));
 				evento.setDataFim(rs.getDate("data_fim"));
-				evento.setDataInicioInscricoes(rs.getDate("data_inicio_inscricoes"));
-				evento.setDataFimInscricoes(rs.getDate("data_fim_inscricoes"));
+				evento.setDataInicioInscricoes(rs.getTimestamp("data_inicio_inscricoes"));
+				evento.setDataFimInscricoes(rs.getTimestamp("data_fim_inscricoes"));
 				evento.setTelefone(rs.getString("telefone"));
 				evento.setEmail(rs.getString("email"));
 			}
@@ -126,8 +126,8 @@ public class EventoDAO {
 			stmt.setString(3,evento.getLocal());
 			stmt.setDate(4,evento.getDataInicio());
 			stmt.setDate(5,evento.getDataFim());
-			stmt.setDate(6,evento.getDataInicioInscricoes());
-			stmt.setDate(7,evento.getDataFimInscricoes());
+			stmt.setTimestamp(6,evento.getDataInicioInscricoes());
+			stmt.setTimestamp(7,evento.getDataFimInscricoes());
 			stmt.setString(8,evento.getTelefone());
 			stmt.setString(9,evento.getEmail());
 			stmt.setInt(10, evento.getId_evento());

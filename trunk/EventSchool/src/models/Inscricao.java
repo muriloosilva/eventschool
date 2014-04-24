@@ -3,7 +3,7 @@ package models;
 public class Inscricao {
 	
 	private int idInscricao;
-	private Participante participante;
+	private Usuario participante;
 	private Atividade atividade;
 	
 	
@@ -13,10 +13,10 @@ public class Inscricao {
 	public void setIdInscricao(int idInscricao) {
 		this.idInscricao = idInscricao;
 	}
-	public Participante getParticipante() {
+	public Usuario getParticipante() {
 		return participante;
 	}
-	public void setParticipante(Participante participante) {
+	public void setParticipante(Usuario participante) {
 		this.participante = participante;
 	}
 	public Atividade getAtividade() {
