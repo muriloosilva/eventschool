@@ -9,8 +9,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import DB.LoginDAO;
-
 import models.User;
 
 /**
@@ -46,7 +44,7 @@ public class LoginAdminServlet extends HttpServlet {
 		user.setLogin(name);
 		user.setPasswd(passwd);
 		
-		user = LoginDAO.loginAdmin(user);
+		user = ControleLogin.loginAdmin(user);
 		
 		if(user != null && user.isLogged()){
 			request.getSession().setAttribute("user", user);

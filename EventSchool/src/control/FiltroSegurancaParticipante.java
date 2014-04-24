@@ -12,22 +12,25 @@ import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
-import models.User;
+import models.Usuario;
 
-public class SecureFilterUser implements Filter{
+public class FiltroSegurancaParticipante implements Filter{
 
 	public void init(FilterConfig config) throws ServletException {
 	}
 	public void doFilter(ServletRequest req, ServletResponse res,
 			FilterChain chain) throws IOException, ServletException {
+		System.out.println("controle!!!!");
 		HttpSession session = ((HttpServletRequest)req).getSession();
-		User usuario = (User)session.getAttribute("user");
-		if(usuario!=null&&usuario.isLogged()&&usuario.getRole().equals(User.roleUser)){
+		Usuario usuario = (Usuario)session.getAttribute("usuario");
+		if(usuario!=null && usuario.isLogado() && usuario.getPapel().equals(Usuario.papelParticipante)){
 			chain.doFilter(req, res);
 			
 		}else{
-			req.setAttribute("msg","Você não está logado no sistema!");
-			RequestDispatcher view = req.getRequestDispatcher("../loginUser.jsp");
+			req.setAttribute("msg","Você não está logado no sistema! Faça Login.");
+			System.out.println(req.getParameter("cod"));
+			req.setAttribute("cod", req.getParameter("cod"));
+			RequestDispatcher view = req.getRequestDispatcher("../loginParticipante.jsp");
 			view.forward(req, res);
 		}
 	}	 
