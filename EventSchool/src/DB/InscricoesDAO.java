@@ -17,7 +17,7 @@ public class InscricoesDAO {
 			Connection con = ConnectionMannager.getConnetion();
 			PreparedStatement stmt = con.prepareStatement(sql);
 			// seta os valores
-			stmt.setInt(1,inscricao.getParticipante().getIdParticipante());
+			stmt.setInt(1,inscricao.getParticipante().getIdUsuario());
 			stmt.setInt(2,inscricao.getAtividade().getIdAtividade());
 			// executa
 			stmt.execute();

@@ -76,6 +76,114 @@ public class AtividadeDAO {
 		
 	}
 	
+	public static List<Atividade> listaDePalestrasEvento(int id){
+		
+		PreparedStatement stmt;
+		List<Atividade> atividades = new ArrayList<Atividade>();
+		try {
+			Connection con = ConnectionMannager.getConnetion();
+			stmt = con.prepareStatement("select * from atividade where evento_pk="+id+" and tipo='palestra'");
+			ResultSet rs = stmt.executeQuery();
+			while (rs.next()) {
+				
+				Atividade atividade = new Atividade();
+				atividade.setIdAtividade(rs.getInt("atividade_pk"));
+				atividade.setEvento(EventoDAO.pegarEvento(rs.getInt("evento_pk")));
+				atividade.setData(rs.getDate("data"));
+				atividade.setHoraInicio(rs.getTime("hora_inicio"));
+				atividade.setHoraFim(rs.getTime("hora_fim"));
+				atividade.setVagas(rs.getInt("vagas"));
+				atividade.setTipo(rs.getString("tipo"));
+				atividade.setNome(rs.getString("nome"));
+				atividade.setDescricao(rs.getString("descricao"));
+				atividades.add(atividade);
+			}
+			rs.close();
+			stmt.close();
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		if(atividades.isEmpty())
+			return null;
+		else
+			return atividades;
+		
+	}
+	
+	public static List<Atividade> listaDeMinicursoEvento(int id){
+		
+		PreparedStatement stmt;
+		List<Atividade> atividades = new ArrayList<Atividade>();
+		try {
+			Connection con = ConnectionMannager.getConnetion();
+			stmt = con.prepareStatement("select * from atividade where evento_pk="+id+" and tipo='minicurso'");
+			ResultSet rs = stmt.executeQuery();
+			while (rs.next()) {
+				
+				Atividade atividade = new Atividade();
+				atividade.setIdAtividade(rs.getInt("atividade_pk"));
+				atividade.setEvento(EventoDAO.pegarEvento(rs.getInt("evento_pk")));
+				atividade.setData(rs.getDate("data"));
+				atividade.setHoraInicio(rs.getTime("hora_inicio"));
+				atividade.setHoraFim(rs.getTime("hora_fim"));
+				atividade.setVagas(rs.getInt("vagas"));
+				atividade.setTipo(rs.getString("tipo"));
+				atividade.setNome(rs.getString("nome"));
+				atividade.setDescricao(rs.getString("descricao"));
+				atividades.add(atividade);
+			}
+			rs.close();
+			stmt.close();
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		if(atividades.isEmpty())
+			return null;
+		else
+			return atividades;
+		
+	}
+	
+public static List<Atividade> listaDeOficinaEvento(int id){
+		
+		PreparedStatement stmt;
+		List<Atividade> atividades = new ArrayList<Atividade>();
+		try {
+			Connection con = ConnectionMannager.getConnetion();
+			stmt = con.prepareStatement("select * from atividade where evento_pk="+id+" and tipo='oficina'");
+			ResultSet rs = stmt.executeQuery();
+			while (rs.next()) {
+				
+				Atividade atividade = new Atividade();
+				atividade.setIdAtividade(rs.getInt("atividade_pk"));
+				atividade.setEvento(EventoDAO.pegarEvento(rs.getInt("evento_pk")));
+				atividade.setData(rs.getDate("data"));
+				atividade.setHoraInicio(rs.getTime("hora_inicio"));
+				atividade.setHoraFim(rs.getTime("hora_fim"));
+				atividade.setVagas(rs.getInt("vagas"));
+				atividade.setTipo(rs.getString("tipo"));
+				atividade.setNome(rs.getString("nome"));
+				atividade.setDescricao(rs.getString("descricao"));
+				atividades.add(atividade);
+			}
+			rs.close();
+			stmt.close();
+			con.close();
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		if(atividades.isEmpty())
+			return null;
+		else
+			return atividades;
+		
+	}
+	
 	public static Atividade pegarAtividade(int id){
 		
 		PreparedStatement stmt;

@@ -1,6 +1,9 @@
 package models;
 
 import java.sql.Date;
+import java.sql.Timestamp;
+
+import util.DataHourFormat;
 
 public class Evento {
 	
@@ -10,8 +13,8 @@ public class Evento {
 	private String local;
 	private Date dataInicio;
 	private Date dataFim;
-	private Date dataInicioInscricoes;
-	private Date dataFimInscricoes;
+	private Timestamp dataInicioInscricoes;
+	private Timestamp dataFimInscricoes;
 	private String telefone;
 	private String email;
 	
@@ -42,25 +45,35 @@ public class Evento {
 	public Date getDataInicio() {
 		return dataInicio;
 	}
+	
+	public String getDataInicioFormatada() {
+		return DataHourFormat.formatarData(dataInicio);
+	}
+	
 	public void setDataInicio(Date dataInicio) {
 		this.dataInicio = dataInicio;
 	}
+	
+	public String getDataFimFormatada() {
+		return DataHourFormat.formatarData(dataFim);
+	}
+	
 	public Date getDataFim() {
 		return dataFim;
 	}
 	public void setDataFim(Date dataFim) {
 		this.dataFim = dataFim;
 	}
-	public Date getDataInicioInscricoes() {
+	public Timestamp getDataInicioInscricoes() {
 		return dataInicioInscricoes;
 	}
-	public void setDataInicioInscricoes(Date dataInicioInscricoes) {
+	public void setDataInicioInscricoes(Timestamp dataInicioInscricoes) {
 		this.dataInicioInscricoes = dataInicioInscricoes;
 	}
-	public Date getDataFimInscricoes() {
+	public Timestamp getDataFimInscricoes() {
 		return dataFimInscricoes;
 	}
-	public void setDataFimInscricoes(Date dataFimInscricoes) {
+	public void setDataFimInscricoes(Timestamp dataFimInscricoes) {
 		this.dataFimInscricoes = dataFimInscricoes;
 	}
 	public String getTelefone() {
